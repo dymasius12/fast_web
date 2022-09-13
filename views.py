@@ -1,11 +1,8 @@
 # Define Blueprint
 from flask import Blueprint
 
-app = Flask(__name__)
+views = Blueprint(__name__, "views")
 
-@app.route("/")
+@views.route("/")
 def home():
-    return "this is the home page"
-
-if __name__ == '__main__':
-    app.run(debug=True, port=8000)
+    return "Home Page"
