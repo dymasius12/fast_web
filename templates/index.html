@@ -19,6 +19,11 @@
   <body>
     <div>
       <h1>Home Page</h1>
+      <p>Hello! Your name is {{ name }}</p>
     </div>
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='index.js')}}"
+    ></script>
   </body>
 </html>
