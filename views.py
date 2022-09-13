@@ -25,3 +25,7 @@ def get_data():
 @views.route("/go-to-home")
 def go_to_home():
     return redirect(url_for("views.get_json"))
+
+@views.route("/user-profile")
+def user_profile():
+    return render_template("profile.html")

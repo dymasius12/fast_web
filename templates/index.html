@@ -18,8 +18,10 @@
   </head>
   <body>
     <div>
+      {% block content %}
       <h1>Home Page</h1>
       <p>Hello! Your name is {{ name }}</p>
+      {% endblock %}
     </div>
     <script
       type="text/javascript"
